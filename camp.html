@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stepanenko Portfolio</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css"/>
+
+    <script src="/assets/js/modernizr.custom.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+</head>
+<body class="demo">
+<div class="demo-toolbar">
+    <div>
+        <a href="/" class="demo-toolbar__name">
+            Информационный портал «Британский лагерь»
+        </a>
+        <a href="https://camp.stpnnk.top/" class="demo-toolbar__external">
+            <i class="fa fa-external-link"></i>
+        </a>
+    </div>
+
+    <div class="demo-toolbar-responsive">
+        <div class="demo-toolbar-responsive__item mobile" onclick="setClass('phone')">
+            <i class="fa fa-mobile"></i>
+        </div>
+        <div class="demo-toolbar-responsive__item tablet" onclick="setClass('tablet')">
+            <i class="fa fa-tablet"></i>
+        </div>
+        <div class="demo-toolbar-responsive__item desktop" onclick="setClass('')">
+            <i class="fa fa-desktop"></i>
+        </div>
+    </div>
+
+    <div class="demo-soc">
+
+        <a href="tel:+380669724134" class="demo-soc__item">+38 (066) 972 41 34</a>
+        <a href="mailto:info@stpnnk.top" class="demo-soc__item">info@stpnnk.top</a>
+        
+        <a href="https://www.instagram.com/stepanenko3/" target="_blank" class="demo-soc__item">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/stpnnk" target="_blank" class="demo-soc__item">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://t.me/stpnnk" target="_blank" class="demo-soc__item">
+            <i class="fa fa-telegram"></i>
+        </a>
+        <a href="https://github.com/stepanenko3" target="_blank" class="demo-soc__item">
+            <i class="fa fa-github"></i>
+        </a>
+    </div>
+</div>
+
+<div id="iframelive" class="demo-iframe">
+    <div class="demo-iframe__wrapper">
+        <iframe id="frame" src="https://camp.stpnnk.top/">
+            [Ваш браузер не поддерживает фреймы или же они запрещены вашими настройками. Несморя на это вы можете
+            просмотреть нужную страницу.]
+        </iframe>
+    </div>
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+<script type="text/javascript">
+    function setClass(_) {
+        let frame$ = $('#iframelive');
+        frame$.removeClass('phone').removeClass('tablet');
+        if(_) frame$.addClass(_);
+    }
+</script>
+</body>
+</html>
